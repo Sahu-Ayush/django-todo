@@ -1,0 +1,8 @@
+version: "3.5"
+services:
+  to-do-app-app:
+    build: 
+      context: ../
+      dockerfile: ./deploy/Dockerfile
+    #image: ${REGISTRY_URL}:${DOCKER_BUILD_TAG:-latest}
+    image: to-do-app-one
